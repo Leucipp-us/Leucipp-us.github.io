@@ -1,0 +1,81 @@
+doctype html
+html(lang='en')
+  head
+    title="Leucippus"
+    
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel="stylesheet")
+    link(href='public/css/index.css' rel='stylesheet')
+  body
+    #home
+    .container-fluid
+      nav.navbar.navbar-inverse.navbar-fixed-top
+        .nav-container.container-fluid
+          .navbar-header
+            button.navbar-toggle(type="button" data-toggle="collapse" data-target="#nav-collapse")
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.nav-brand.navbar-brand(href="#") Leucippus
+            
+          #nav-collapse.collapse.navbar-collapse
+            ul.nav-buttons.nav.navbar-nav
+              li 
+                a(href="#home") Home
+              li 
+                a(href="#about") About
+              li 
+                a(href="#download") Download
+              li 
+                a(href="#contact") Contact Us
+      
+      section.opener
+        .big-title
+          h1 Leucippus
+          
+        .vid-container
+          video(autoplay muted loop).demo
+            source(src="public/video/demo.webm" type="video/webm")
+            source(src="public/video/demo.mp4" type="video/mp4")
+            Your browser does not support the video tag
+      
+      section#about.lightback
+        .sec-inner.container-fluid
+          .row
+            h2 The Application
+            p Leucippus is an ImageJ plugin that is designed to analyse and extract information from TEM images for the purpose of quickly producing testable data within molecular dynamics programs.
+          .row
+            .col.col-sm-4
+              img.col-image(src="public/image/multiplesets.png" type="image/png")
+              h3 Flexible
+              p Leucippus has the ability to quickly analyse different sets of data using multiple parameters that can be easily be set by you. Leucippus also allows you to be able to change the appearance of your data sets allowing you to differentiate between the data.
+            .col.col-sm-4
+              img.col-image(src="public/image/imagej.png" type="image/png")
+              h3 Built with ImageJ
+              p Leucippus is implemented as an imageJ plugin capable of analysing and altering images in a non destructive way. This method of implementation allows users the full capabilites of ImageJ while using Leucippus.
+            .col.col-sm-4
+              img.col-image(src="public/image/outputfile.png" type="image/png")
+              h3 Portable
+              p Leucippus is capable of saving all data produced within itself including all output pointsets, input lines and points, and the colors and draw states associated with them. This way when loading the data into Leucippus we have the exact state that we saved it in.
+        
+      section#download
+        .sec-inner
+          h2 Download
+          p As of right now Leucippus is not available for download. However you can check us out at #[a(href="http://github.com/Leucipp-us") github.com/Leucippus]
+        
+      //- section#contact.lightback
+      //-   h2 Contact Us
+      //-   p This will be empty for now.
+        
+        
+      footer.lightback
+        .sec-inner
+          p Leucipp.us &copy; David Nemirovsky, 2016
+    
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+  
+  
