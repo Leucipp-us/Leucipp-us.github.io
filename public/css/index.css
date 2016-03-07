@@ -60,7 +60,12 @@ nav, video {
 
 .lightback {
   background: #eee;
-  color: #444;
+  color: #333;
+  text-shadow: none;
+}
+
+.lightback a, .lightback a:focus {
+  color: #333;
   text-shadow: none;
 }
 
